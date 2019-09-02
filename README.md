@@ -2,7 +2,12 @@
 
 Dnspod API Class 
 
-The [DNSPod User API](https://www.dnspod.cn/docs/index.html) is restricted to individual users, making it easier and more flexible for users to manage their own domain names and records.
+The [DNSPod User API](https://www.dnspod.com/docs/index.html) OR 
+[DNSPod中文文档](https://www.dnspod.cn/docs/index.html) is restricted to individual users, making it easier and more flexible for users to manage their own domain names and records.
+
+https://www.dnspod.com（China Hong Kong）
+
+https://www.dnspod.cn（China Shandong Province）
 
 `Need to cooperate with Curl extension`
 
