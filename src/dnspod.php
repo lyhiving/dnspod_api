@@ -4,13 +4,14 @@
     *
     * @author http://weibo.com/yakeing
     * @version 2.5
-    * @documentation https://www.dnspod.cn/docs/index.html (API docs)
+    * @documentation https://www.dnspod.com/docs/index.html (API docs)
     * Need to cooperate with Curl extension
 **/
 namespace PhpDnspod;
 class Dnspod{
     private $parameters = array(); //Public parameter
-    private $uri = 'https://dnsapi.cn/'; //API url
+    private $uri = 'https://www.dnspod.com/'; //China Hong Kong API url
+    //private $uri = 'https://www.dnspod.cn/'; //China Shandong Province API url
     public $message = 0; //return message
     public $develop = false; //test switch
     public $location = 0; //Number of location
