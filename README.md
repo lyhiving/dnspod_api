@@ -27,7 +27,7 @@ https://www.dnspod.cn China Shandong Province
 [![Downloads](https://img.shields.io/github/downloads/yakeing/Dnspod_API/total.svg)](https://github.com/yakeing/Dnspod_API)
 [![Size](https://img.shields.io/github/size/yakeing/Dnspod_API/src/dnspod.php.svg)](https://github.com/yakeing/Dnspod_API/blob/master/src/dnspod.php)
 [![tag](https://img.shields.io/github/tag/yakeing/Dnspod_API.svg)](https://github.com/yakeing/Dnspod_API/releases)
-[![Language](https://img.shields.io/github/license/yakeing/Dnspod_API.svg)](https://github.com/yakeing/Dnspod_API/blob/master/LICENSE)
+[![Language](https://oauth.applinzi.com/Badge/license/MPL-2.0/FE7D37.svg)](https://github.com/yakeing/Dnspod_API/blob/master/LICENSE)
 [![Php](https://img.shields.io/github/languages/top/yakeing/Dnspod_API.svg)](https://github.com/yakeing/Dnspod_API)
 
 ### Installation
