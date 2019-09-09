@@ -1,10 +1,6 @@
-
- [![dnspod](https://raw.githubusercontent.com/yakeing/Dnspod_API/master/Subsidiary/DNSPod.png)](https://github.com/yakeing/Dnspod_API)
-
+<div align=center><img src="https://raw.githubusercontent.com/yakeing/Dnspod_API/master/Subsidiary/DNSPod.png"/></div>
 
 # Dnspod_API
-
-Dnspod API Class 
 
 The [DNSPod User API](https://www.dnspod.com/docs/index.html) OR 
 [DNSPod中文文档](https://www.dnspod.cn/docs/index.html) is restricted to individual users, making it easier and more flexible for users to manage their own domain names and records.
