@@ -22,9 +22,9 @@ https://www.dnspod.cn China Shandong Province
 
 [![Downloads](https://img.shields.io/github/downloads/yakeing/Dnspod_API/total.svg)](https://github.com/yakeing/Dnspod_API)
 [![Size](https://img.shields.io/github/size/yakeing/Dnspod_API/src/dnspod.php.svg)](https://github.com/yakeing/Dnspod_API/blob/master/src/dnspod.php)
-[![tag](https://img.shields.io/github/tag/yakeing/Dnspod_API.svg)](https://github.com/yakeing/Dnspod_API/releases)
-[![Language](https://oauth.applinzi.com/Label/license/MPL-2.0/FE7D37.svg)](https://github.com/yakeing/Dnspod_API/blob/master/LICENSE)
-[![php](https://oauth.applinzi.com/Label/php/100.0%25/007EC6.svg)](https://github.com/yakeing/Dnspod_API)
+[![tag](https://oauth.applinzi.com/Label/tag/v2.5.0/28a745.svg)](https://github.com/yakeing/Dnspod_API/releases)
+[![license](https://oauth.applinzi.com/Label/license/MPL-2.0/FE7D37.svg)](https://github.com/yakeing/Dnspod_API/blob/master/LICENSE)
+[![languages](https://oauth.applinzi.com/Label/languages/php/007EC6.svg)](https://github.com/yakeing/Dnspod_API/search?l=php)
 
 ### Installation
 
