@@ -1,5 +1,5 @@
 {
-  "name": "dnspodapi",
+  "name": "@yakeing/dnspod-api",
   "version": "2.5.0",
   "description": "The DNSPod User API is restricted to individual users, making it easier and more flexible for users to manage their own domain names and records.",
   "main": "index.js",
@@ -8,7 +8,7 @@
     "php-badge": "*",
     "@yakeing/str-increment": "*",
     "php-letsencrypt": "*",
-    "dnspodapi": "*"
+    "@yakeing/dnspod-api": "*"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
