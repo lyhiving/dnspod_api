@@ -13,18 +13,16 @@ https://www.dnspod.cn China Shandong Province
 
 `Need to cooperate with Curl extension`
 
-### Packagist
+### Dadge
 
-[![Version](http://img.shields.io/packagist/v/yakeing/dnspod_api.svg)](https://github.com/yakeing/Dnspod_API/releases)
-[![Downloads](http://img.shields.io/packagist/dt/yakeing/dnspod_api.svg)](https://packagist.org/packages/yakeing/Dnspod_API)
+[![Downloads](https://raw.githubusercontent.com/yakeing/Documentation/master/Icon/downloads-999M.png)](https://packagist.org/packages/yakeing/Dnspod_API)
+[![Size](https://raw.githubusercontent.com/yakeing/Documentation/master/Icon/size-1K.png)](https://github.com/yakeing/Dnspod_API/blob/master/src/dnspod.php)
+[![tag](https://raw.githubusercontent.com/yakeing/Documentation/master/Icon/tag-v2.5.0.png
+)](https://github.com/yakeing/Dnspod_API/releases)
+[![license](https://raw.githubusercontent.com/yakeing/Documentation/master/Icon/license-MPL-2.0.png)](https://github.com/yakeing/Dnspod_API/blob/master/LICENSE)
+[![languages](https://raw.githubusercontent.com/yakeing/Documentation/master/Icon/languages-php.png)](https://github.com/yakeing/Dnspod_API/search?l=php)
 
-### Github
 
-[![Downloads](https://img.shields.io/github/downloads/yakeing/Dnspod_API/total.svg)](https://github.com/yakeing/Dnspod_API)
-[![Size](https://img.shields.io/github/size/yakeing/Dnspod_API/src/dnspod.php.svg)](https://github.com/yakeing/Dnspod_API/blob/master/src/dnspod.php)
-[![tag](https://oauth.applinzi.com/Label/tag/v2.5.0/28a745.svg)](https://github.com/yakeing/Dnspod_API/releases)
-[![license](https://oauth.applinzi.com/Label/license/MPL-2.0/FE7D37.svg)](https://github.com/yakeing/Dnspod_API/blob/master/LICENSE)
-[![languages](https://oauth.applinzi.com/Label/languages/php/007EC6.svg)](https://github.com/yakeing/Dnspod_API/search?l=php)
 
 ### Installation
 
@@ -159,7 +157,7 @@ Use [Composer](https://getcomposer.org) to install the library.
 ---
 If you've got value from any of the content which I have created, then I would very much appreciate your support by payment donate.
 
-[![Sponsor](https://oauth.applinzi.com/State/heart/Sponsor/EA4AAA.svg)](https://yakeing.tk/Sponsor/)
+[![Sponsor](https://raw.githubusercontent.com/yakeing/Documentation/master/Icon/Sponsor.png)](https://yakeing.tk/Sponsor/)
 
 Author
 ---
