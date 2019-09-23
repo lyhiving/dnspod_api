@@ -15,9 +15,9 @@ https://www.dnspod.cn China Shandong Province
 
 ### Dadge
 
-[![Downloads](https://raw.githubusercontent.com/yakeing/Documentation/master/Icon/downloads-999M.png)](https://packagist.org/packages/yakeing/Dnspod_API)
-[![Size](https://raw.githubusercontent.com/yakeing/Documentation/master/Icon/size-1K.png)](https://github.com/yakeing/Dnspod_API/blob/master/src/dnspod.php)
-[![tag](https://raw.githubusercontent.com/yakeing/Documentation/master/Icon/tag-v2.5.0.png
+[![Downloads](https://raw.githubusercontent.com/yakeing/Documentation/master/Icon/download-1K.png)](https://packagist.org/packages/yakeing/Dnspod_API)
+[![Size](https://raw.githubusercontent.com/yakeing/Documentation/master/Icon/size-1KB.png)](https://github.com/yakeing/Dnspod_API/blob/master/src/dnspod.php)
+[![tag](https://raw.githubusercontent.com/yakeing/Documentation/master/Icon/tag-v2.png
 )](https://github.com/yakeing/Dnspod_API/releases)
 [![license](https://raw.githubusercontent.com/yakeing/Documentation/master/Icon/license-MPL-2.0.png)](https://github.com/yakeing/Dnspod_API/blob/master/LICENSE)
 [![languages](https://raw.githubusercontent.com/yakeing/Documentation/master/Icon/languages-php.png)](https://github.com/yakeing/Dnspod_API/search?l=php)
