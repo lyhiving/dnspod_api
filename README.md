@@ -153,11 +153,11 @@ Use [Composer](https://getcomposer.org) to install the library.
     $DP->newRecords($name, $type, $value);
 ```
 
-[Sponsor](https://yakeing.tk/Sponsor/)
+[Sponsor](https://github.com/yakeing/Documentation/blob/master/Sponsor/README.md)
 ---
 If you've got value from any of the content which I have created, then I would very much appreciate your support by payment donate.
 
-[![Sponsor](https://raw.githubusercontent.com/yakeing/Documentation/master/Icon/Sponsor.png)](https://yakeing.tk/Sponsor/)
+[![Sponsor](https://raw.githubusercontent.com/yakeing/Documentation/master/Icon/Sponsor.png)](https://github.com/yakeing/Documentation/blob/master/Sponsor/README.md)
 
 Author
 ---
