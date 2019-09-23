@@ -4,18 +4,7 @@
   "description": "The DNSPod User API is restricted to individual users, making it easier and more flexible for users to manage their own domain names and records.",
   "main": "index.js",
   "devDependencies": {
-    "php-fsockopen": "*",
-    "php-badge": "*",
-    "@yakeing/str-increment": "*",
-    "php-letsencrypt": "*",
-    "@yakeing/dnspod-api": "*",
-    "@yakeing/php-session": "*",
-    "php-jwsign": "*",
-    "php-saekv": "*",
-    "get-header": "*",
-    "php-curl": "*",
-    "@yakeing/php-template": "*",
-    "@yakeing/qrcode": "*"
+    "@yakeing/dnspod-api": "*"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
