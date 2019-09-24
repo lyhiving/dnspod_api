@@ -13,9 +13,9 @@ https://www.dnspod.cn China Shandong Province
 
 `Need to cooperate with Curl extension`
 
-### Dadge
+### Github badge
 
-[![Downloads](https://raw.githubusercontent.com/yakeing/Documentation/master/Icon/download-1K.png)](https://packagist.org/packages/yakeing/Dnspod_API)
+[![Downloads](https://raw.githubusercontent.com/yakeing/Documentation/master/Icon/download-0.1K.png)](https://packagist.org/packages/yakeing/Dnspod_API)
 [![Size](https://raw.githubusercontent.com/yakeing/Documentation/master/Icon/size-1KB.png)](https://github.com/yakeing/Dnspod_API/blob/master/src/dnspod.php)
 [![tag](https://raw.githubusercontent.com/yakeing/Documentation/master/Icon/tag-v2.png
 )](https://github.com/yakeing/Dnspod_API/releases)
