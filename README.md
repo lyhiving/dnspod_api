@@ -5,7 +5,7 @@
 The [DNSPod User API](https://www.dnspod.com/docs/index.html) OR 
 [DNSPod中文文档](https://www.dnspod.cn/docs/index.html) is restricted to individual users, making it easier and more flexible for users to manage their own domain names and records.
 
- [![dnspod](https://raw.githubusercontent.com/yakeing/Dnspod_API/master/Subsidiary/DNSPod_Logo.png)](https://github.com/yakeing/Dnspod_API)
+ [![dnspod](https://raw.githubusercontent.com/yakeing/Dnspod_API/master/Subsidiary/DNSPod_Logo.png)](https://github.com/yakeing/dnspod_api)
 
 https://www.dnspod.com China Hong Kong
 
@@ -16,11 +16,11 @@ https://www.dnspod.cn China Shandong Province
 ### Github badge
 
 [![Downloads](https://raw.githubusercontent.com/yakeing/Documentation/master/Icon/download-0.1K.png)](https://packagist.org/packages/yakeing/dnspod_api)
-[![Size](https://raw.githubusercontent.com/yakeing/Documentation/master/Icon/size-1KB.png)](https://github.com/yakeing/Dnspod_API/blob/master/src/dnspod.php)
+[![Size](https://raw.githubusercontent.com/yakeing/Documentation/master/Icon/size-1KB.png)](https://github.com/yakeing/dnspod_api/blob/master/src/dnspod.php)
 [![tag](https://raw.githubusercontent.com/yakeing/Documentation/master/Icon/tag-v2.png
-)](https://github.com/yakeing/Dnspod_API/releases)
-[![license](https://raw.githubusercontent.com/yakeing/Documentation/master/Icon/license-MPL-2.0.png)](https://github.com/yakeing/Dnspod_API/blob/master/LICENSE)
-[![languages](https://raw.githubusercontent.com/yakeing/Documentation/master/Icon/languages-php.png)](https://github.com/yakeing/Dnspod_API/search?l=php)
+)](https://github.com/yakeing/dnspod_api/releases)
+[![license](https://raw.githubusercontent.com/yakeing/Documentation/master/Icon/license-MPL-2.0.png)](https://github.com/yakeing/dnspod_api/blob/master/LICENSE)
+[![languages](https://raw.githubusercontent.com/yakeing/Documentation/master/Icon/languages-php.png)](https://github.com/yakeing/dnspod_api/search?l=php)
 
 
 
