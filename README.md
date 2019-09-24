@@ -27,6 +27,7 @@ https://www.dnspod.cn China Shandong Province
 ### Installation
 
 Use [Composer](https://getcomposer.org) to install the library.
+Of course, You can go to [Packagist](https://packagist.org/packages/yakeing/dnspod_api) to view.
 
 ```
     $ composer require yakeing/dnspod_api
