@@ -7,7 +7,7 @@
     * @documentation https://www.dnspod.com/docs/index.html (API docs)
     * Need to cooperate with Curl extension
 **/
-namespace PhpDnspod;
+namespace dnspod_api;
 class Dnspod{
     private $parameters = array(); //Public parameter
     private $uri = 'https://www.dnspod.com/'; //China Hong Kong API url
