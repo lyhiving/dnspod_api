@@ -13,13 +13,6 @@ https://www.dnspod.cn China Shandong Province
 
 `Need to cooperate with Curl extension`
 
-### Github badge
-
-[![Downloads](https://raw.githubusercontent.com/yakeing/Documentation/master/Icon/download-0.1K.png)](https://packagist.org/packages/yakeing/dnspod_api)
-[![Size](https://raw.githubusercontent.com/yakeing/Documentation/master/Icon/size-1KB.png)](src/dnspod.php)
-[![tag](https://raw.githubusercontent.com/yakeing/Documentation/master/Icon/tag-v2.png)](../../releases)
-[![license](https://raw.githubusercontent.com/yakeing/Documentation/master/Icon/license-MPL-2.0.png)](LICENSE)
-[![languages](https://raw.githubusercontent.com/yakeing/Documentation/master/Icon/languages-php.png)](../../search?l=php)
 
 ### Installation
 
@@ -27,7 +20,7 @@ Use [Composer](https://getcomposer.org) to install the library.
 Of course, You can go to [Packagist](https://packagist.org/packages/yakeing/dnspod_api) to view.
 
 ```
-    $ composer require yakeing/dnspod_api
+    $ composer require lyhiving/dnspod_api
 ```
 
 ### Initialization parameter
@@ -149,17 +142,17 @@ Of course, You can go to [Packagist](https://packagist.org/packages/yakeing/dnsp
     $type = 'A';
     $value = '255.255.255.0';
     $DP->newRecords($name, $type, $value);
+
+    //Remove share record
+    $domain = 'example.com';
+    $share_email = 'share@old.com';
+    echo $DP->shareRemove($domain, $share_email);
 ```
 
-[Sponsor](https://github.com/yakeing/Documentation/blob/master/Sponsor/README.md)
+
+Original author
 ---
-If you've got value from any of the content which I have created, then I would very much appreciate your support by payment donate.
-
-[![Sponsor](https://raw.githubusercontent.com/yakeing/Documentation/master/Icon/Sponsor.png)](https://github.com/yakeing/Documentation/blob/master/Sponsor/README.md)
-
-Author
----
-
 weibo: [yakeing](https://weibo.com/yakeing)
 
-twitter: [yakeing](https://twitter.com/yakeing)
+
+Modify by [lyhiving](https://twitter.com/lyhiving)
