@@ -12,8 +12,8 @@ namespace dnspod_api;
 class Dnspod
 {
     private $parameters = array(); //Public parameter
-    private $uri = 'https://www.dnspod.com/'; //China Hong Kong API url
-    //private $uri = 'https://www.dnspod.cn/'; //China Shandong Province API url
+    // private $uri = 'https://www.dnspod.com/'; //China Hong Kong API url
+    private $uri = 'https://dnsapi.cn/'; //China Shandong Province API url
     public $message = 0; //return message
     public $develop = false; //test switch
     public $location = 0; //Number of location

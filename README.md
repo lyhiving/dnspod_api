@@ -5,7 +5,7 @@
 The [DNSPod User API](https://www.dnspod.com/docs/index.html) OR 
 [DNSPod中文文档](https://www.dnspod.cn/docs/index.html) is restricted to individual users, making it easier and more flexible for users to manage their own domain names and records.
 
- [![dnspod](Subsidiary/DNSPod_Logo.png)](https://github.com/yakeing/dnspod_api)
+ [![dnspod](Subsidiary/DNSPod_Logo.png)](https://github.com/lyhiving/dnspod_api)
 
 https://www.dnspod.com China Hong Kong
 
@@ -17,7 +17,7 @@ https://www.dnspod.cn China Shandong Province
 ### Installation
 
 Use [Composer](https://getcomposer.org) to install the library.
-Of course, You can go to [Packagist](https://packagist.org/packages/yakeing/dnspod_api) to view.
+Of course, You can go to [Packagist](https://packagist.org/packages/lyhiving/dnspod_api) to view.
 
 ```
     $ composer require lyhiving/dnspod_api
