@@ -12,8 +12,9 @@ namespace dnspod_api;
 class Dnspod
 {
     private $parameters = array(); //Public parameter
-    // private $uri = 'https://www.dnspod.com/'; //China Hong Kong API url
-    private $uri = 'https://dnsapi.cn/'; //China Shandong Province API url
+    private $global_uri = 'https://api.dnspod.com/'; //Global API url
+    private $cn_uri = 'https://dnsapi.cn/'; //China API url
+    private $uri = 'https://dnsapi.cn/'; //Default API url
     public $message = 0; //return message
     public $develop = false; //test switch
     public $location = 0; //Number of location
@@ -32,7 +33,16 @@ class Dnspod
             //'user_id' => '',
             'error_on_empty' => 'no',
         );
-    } //END __construct
+    }
+    //切换地区，cn中国，global全球
+    public function setRegion($src='cn'){
+        if($src=='global'){
+            $this->uri = $this->global_uri;
+        }else{
+            $this->uri = $this->cn_uri;
+        }
+        return $this;
+    }
 
     //Add or modify records 增加或修改记录
     public function Records($domain, $value, $name = '_acme-challenge', $type = 'TXT', $removeRecord = true)

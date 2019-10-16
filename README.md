@@ -7,9 +7,6 @@ The [DNSPod User API](https://www.dnspod.com/docs/index.html) OR
 
  [![dnspod](Subsidiary/DNSPod_Logo.png)](https://github.com/lyhiving/dnspod_api)
 
-https://www.dnspod.com China Hong Kong
-
-https://www.dnspod.cn China Shandong Province
 
 `Need to cooperate with Curl extension`
 
@@ -27,6 +24,8 @@ Of course, You can go to [Packagist](https://packagist.org/packages/lyhiving/dns
 
 - [x] Sample：
 ```php
+    require_once dirname(__FILE__) . '/vendor/autoload.php';
+    use dnspod_api\Dnspod;
     $uid = 12345;
     $token = X12345;
     $DP = new Dnspod($uid, $token);
@@ -133,6 +132,12 @@ Of course, You can go to [Packagist](https://packagist.org/packages/lyhiving/dns
     //Get the level allowed line
     $domain = 'example.com';
     echo $DP->getRecordLine($domain);
+
+    //Change API Region to Global Network And
+    $DP->setRegion('global');
+
+    //Change API Region to China Network
+    $DP->setRegion('cn');
     
     //Get a list of domain names
     echo $DP->getDomainList();
