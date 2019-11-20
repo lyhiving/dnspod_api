@@ -189,7 +189,7 @@ class Dnspod
     } //END getDomainInfo
 
     //Get a list of records 获取记录列表
-    public function getRecordList($domain)
+    public function getRecordList($domain,$ext=array())
     {
         $data = array(
             'domain' => $domain,
@@ -198,6 +198,7 @@ class Dnspod
             //'keyword' => '',
             'length' => '20',
         );
+        if($ext) $data =  array_merge($data, $ext);
         return $this->http('Record.List', $data);
     } //END getRecordList
 
