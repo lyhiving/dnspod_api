@@ -120,6 +120,27 @@ class Dnspod
         return true;
     } //END Records
 
+
+    //Copy 域名记录到另外一个域名
+    public function copyRecords($copyDomain, $toDomain, $page=1)
+    {
+        $A = gethostbynamel($copyDomain);
+        if (!is_array($A)) {
+            $this->message = 'Invalid domain name or no A record';
+            return false;
+        }
+        $recordList = $this->getRecordList($copyDomain, array('length'=>300));
+        if (is_bool($recordList)) {
+            return false;
+        }
+        foreach ($recordList['records'] as $r) {
+            if ($r['type'] != 'NS') { 
+                 $this->addRecord($toDomain, $r['name'], $r['value'], $r['type'], array(), $r['remark']);
+            }
+        }
+        return true;
+    } //END copyArecord
+
     //Copy A record 复制A记录
     public function copyArecord($copyDomain, $toDomain)
     {
@@ -157,17 +178,18 @@ class Dnspod
     } //END getVersion
 
     //Get the level allowed line 获取等级允许的线路
-    public function getRecordLine($domain)
+    public function getRecordLine($domai,$ext=array())
     {
         $data = array(
             'domain' => $domain,
             'domain_grade' => 'DP_Free', //old D_Free
         );
+        if($ext) $data =  array_merge($data, $ext);
         return $this->http('Record.Line', $data);
     } //END getRecordLine
 
     //Get a list of domain names 获取域名列表
-    public function getDomainList()
+    public function getDomainList($ext=array())
     {
         $data = array(
             'offset' => 0,
@@ -176,6 +198,7 @@ class Dnspod
             //'keyword' => '',
             'type' => 'all',
         );
+        if($ext) $data =  array_merge($data, $ext);
         return $this->http('Domain.List', $data);
     } //END getDomainList
 
@@ -196,10 +219,30 @@ class Dnspod
             'offset' => '0',
             //'sub_domain' => 'www.'.$domain,
             //'keyword' => '',
-            'length' => '20',
+            'length' => '100',
         );
         if($ext) $data =  array_merge($data, $ext);
         return $this->http('Record.List', $data);
+    } //END getRecordList
+
+    //Get domain all records 获取域名的所有记录
+    public function getAllRecord($domain,&$ret)
+    {
+        $offset = 0;
+        $pagesize = 100;
+        $data = array(
+            'domain' => $domain,
+            'offset' => $offset,
+            'length' => $pagesize,
+        );
+        $items = $this->http('Record.List', $data);
+        $ret['total']= $items['info']['record_total'];
+        if($ret['total'] <= $pagesize){
+            $ret['records'] = $items['records'];
+            return true;
+        }else{
+
+        }
     } //END getRecordList
 
     //Get details of batch tasks 获取批量任务的详情
@@ -225,12 +268,29 @@ class Dnspod
     } //END newRecords
 
     //Add a single record 添加单项记录
-    public function addRecord($domain, $name = 'test', $value = 'test', $type = 'TXT')
+    public function addRecord($domain, $name = 'test', $value = 'test', $type = 'TXT', $ext=array(), $remark=false)
     {
         $data = $this->newRecords($name, $type, $value);
         $data['domain'] = $domain;
-        return $this->http('Record.Create', $data);
+        if($ext) $data =  array_merge($data, $ext);
+        $ret = $this->http('Record.Create', $data);
+        if($remark!==FALSE){
+            $id = $ret['record']['id'];
+            if($id) $this->setRecord($domain, $id, $remark);
+        }
+        return $ret;
+        
     } //END addRecord
+
+    //Modify remark 修改备注
+    public function setRecord($domain, $id, $remark='')
+    {
+        $data['domain'] = $domain;
+        $data['record_id'] = $id;
+        $data['remark'] = $remark;
+        return $this->http('Record.Remark', $data); 
+        
+    } //END Modify remark
 
     //Add records in bulk 批量添加记录
     //$record[0] = array('name'=>'w', 'type'=>'MX', 'value'='mx.com', 'mx'=>1)
@@ -255,12 +315,17 @@ class Dnspod
     } //END batchAddRecord
 
     //Modify record 修改记录
-    public function recordModify($domain, $record_id, $name, $value, $type = 'A', $mx = 1)
+    public function recordModify($domain, $record_id, $name, $value, $type = 'A', $mx = 1, $remark=false)
     {
         $data = $this->newRecords($name, $type, $value, $mx);
         $data['domain'] = $domain;
         $data['record_id'] = $record_id;
-        return $this->http('Record.Modify', $data);
+        $ret = $this->http('Record.Modify', $data);
+        if($remark!==FALSE){
+            $id = $ret['record']['id'];
+            if($id) $this->setRecord($domain, $id, $remark);
+        }
+        return $ret;
     } //END recordModify
 
     //Delete Record 删除记录
@@ -276,13 +341,13 @@ class Dnspod
 
     //Remove share
     public function shareRemove($domain, $remove_email){
-        $data = array( 
+        $data = array(
             'email' => $remove_email,
         );
         if(is_numeric($domain)) $data['domain_id'] = $domain;
         else $data['domain'] = $domain;
         return $this->http('Domainshare.Remove', $data);
-    } 
+    }
 
 
     //Transfer data 传送数据
